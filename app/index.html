@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 
@@ -14,7 +15,7 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -24,17 +25,71 @@
 	<link rel="stylesheet" href="css/style.min.css">
 
 </head>
+
 <body>
-	<section id="header" class="header">
+	<header id="header" class="header">
 		<div class="container">
-			<h1>Hello world!!!!!</h1>
+			<div class="row">
+				<div class="col-md-3 col-lg-2">
+
+					<a class="logo" href="#">
+						<img class="logo__img" src="img/logo.svg" alt="Alpha" width="64" height="55">
+						<span class="logo__text">Alpha</span>
+					</a>
+
+				</div>
+				<div class="col-md-7 col-lg-8">
+
+					<nav class="nav">
+						<ul class="nav__list">
+							<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Shortcodes</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+						</ul>
+					</nav>
+
+				</div>
+				<div class="col-md-2">
+
+					<div class="user-pannel">
+							<a href="#" class="cart"></a>
+							<a href="#" class="search"></a>
+					</div>
+
+				</div>
+			</div>
+
+			<form class="enterForm" action="#">
+				<label class="enterForm__text-label enterForm__name"><input class="enterForm__text" type="text" name="name" placeholder="Name"></label>
+				<label class="enterForm__text-label enterForm__email"><input class="enterForm__text" type="text" name="email" placeholder="Email"></label>
+				<label class="enterForm__text-label enterForm__phone"><input class="enterForm__text" type="text" name="phone" placeholder="Phone"></label>
+				<select class="enterForm__city" name="city">
+					<option value="select">Select a city</option>
+					<option value="newYork">New York</option>
+					<option value="chicago">Chicago</option>
+					<option value="portland">Portland</option>
+					<option value="lasVegas">Las vegas</option>
+				</select>
+				<label class="enterForm__accept-label">
+					<input class="enterForm__accept" type="checkbox" name="acception">
+					<div class="enterForm__accept-text">I accept the Terms of Service</div>
+				</label>
+				<button class="enterForm__submit btn" type="submit">get started</button>
+			</form>
+
 		</div>
-	</section>
-	
+	</header>
+
 
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
+
 </html>
