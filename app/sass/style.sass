@@ -2,9 +2,15 @@
 @import "fonts"
 @import "container"
 
+.clearfix::after
+	display: table
+	content: ""
+	clear: both
+
 body 
 	font-family: "Montserrat", sans-serif
 	font-size: 16px
+	font-weight: 300
 	line-height: 1.75
 	color: #fff
 
@@ -12,7 +18,7 @@ a
 	&:hover 
 		text-decoration: none
 
-
+// -------------------Header Start----------------------------------
 .header 
 	padding-top: 35px
 	padding-bottom: 135px
@@ -158,10 +164,189 @@ a
 	&:hover 
 		background-color: #736357
 
+// -------------------Header End----------------------------------
 
 
+// -------------------Projects Start----------------------------------
+
+.projects
+	padding-top: 80px
+	padding-bottom: 45px
+	color: #8c8c8c
+
+.projectType
+	position: relative
+	padding-bottom: 15px
+	text-align: center
+	&:hover 
+		.projectType__icon 
+			fill: #c7b299
+		.projectType__head
+			color: #c7b299
+		&::after
+			background-color: #c7b299
+	&::after
+		content: ""
+		position: absolute
+		bottom: 0px
+		left: 50%
+		height: 3px
+		width: 70px
+		margin-left: -35px
+		background-color: #f1eee9
+
+.projectType__icon-wrap
+	margin-bottom: 15px
+.projectType__icon 
+	fill: #555
+.projectType__head
+	font-family: "Raleway", sans-serif
+	font-size: 22px
+	font-weight: 800
+	color: #555
+.projectType__text
+	font-size: 14px
+	line-height: 1.7
+
+.projects__contentWrap
+	width: 768px
+	margin: 0 auto
+	margin-top: 120px
+	text-align: center
+
+.projects__title
+	font-family: "Raleway", sans-serif
+	font-size: 30px
+	font-weight: 800
+	color: #555
+	text-align: center
+.projects__text
+	margin-bottom: 34px
+
+.sort 
+	margin-bottom: 34px
+.sort__btn
+	min-width: 70px
+	margin-right: 5px
+	border: 1px solid #ebebeb
+	border-radius: 3px
+	font-size: 14px
+	padding: 5px 15px
+	background-color: #fff
+.sort__btn--active
+	border:  none
+	background-color: #998675
+	color: #fff
+
+.projectItem
+	margin-bottom: 30px
+	&:hover
+		.projectItem__descr
+			background-color: #362f2d
+			&::before
+				border-color: transparent transparent #362f2d transparent
+		.projectItem__title
+			color: #fff
+		.projectItem__type
+			color: #c7b299
+		.projectItem__img
+			img
+				filter: brightness(60%)
+		.projectItem__hover
+			display: block
+.projectItem__img
+	position: relative
+	img 
+		background-color: red
+		width: 100%
+.projectItem__descr
+	position: relative
+	padding: 25px
+	background-color: #fbfaf8
+	&::before
+		content: ""
+		position: absolute
+		top: -16px
+		left: 20px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 0 15px 16px 15px
+		border-color: transparent transparent #fbfaf8 transparent
+.projectItem__title
+	margin: 0px
+	font-family: "Raleway", sans-serif
+	font-weight: 500
+	font-size: 20px 
+	color: #c7b299
+.projectItem__type
+	font-size: 14px 
+	color: #d1d1d1
+
+.project__btn
+	margin: 0 auto
+	margin-top: 40px
+
+.projectItem__hover
+	display: none
+	position: absolute
+	margin: auto
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	width: 80px
+	height: 26px
+	
+.projectItem__link,
+.projectItem__lupa
+	display: inline-block
+	width: 26px
+	height: 26px
+.projectItem__link
+	margin-right: 20px
+	background: url("../img/projectItem-link.svg") no-repeat
+.projectItem__lupa
+	background: url("../img/projectItem-lupa.svg") no-repeat
+
+// -------------------Projects End----------------------------------
 
 
+// -------------------Mobile Start----------------------------------
+
+.mobile	
+	background-color: #fbfaf8
+	color: #8c8c8c
+.mobile__content-wrap
+	padding: 190px 0 170px 0
+	background: url("../img/mobile-bg.png") no-repeat bottom left 40px
+.mobile__content
+	float: right
+	width: 670px
+	
+.mobile__title 
+	font-size: 30px
+	font-family: "Raleway", sans-serif
+	font-weight: 600
+.mobile__list
+	padding: 0
+	margin: 0
+	margin-left: 55px
+	list-style: none
+.mobile__item
+	position: relative
+	padding-left: 55px 
+	margin-bottom: 5px
+	&::before
+		content: ""
+		position: absolute
+		top: 2px
+		left: 0
+		width: 21px
+		height: 21px
+		background-image: url("../img/mobile-item.svg")
+
+// -------------------Mobile End----------------------------------
 
 
 
