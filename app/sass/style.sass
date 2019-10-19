@@ -348,7 +348,99 @@ a
 
 // -------------------Mobile End----------------------------------
 
+// -------------------Posts Start----------------------------------
 
+.posts
+	padding: 50px 0 60px 0
+	color: #8c8c8c
+
+.posts__title
+	font-family: "Raleway", sans-serif
+	font-size: 30px
+	font-weight: 800
+	color: #555
+	text-align: center
+
+.posts__text
+	width: 768px
+	margin: 0 auto
+	margin-bottom: 30px
+	text-align: center
+
+.postsSlider
+	margin: 0 -15px
+.postsSlider__item
+	position: relative
+	margin: 0 15px
+	transition: 500ms
+.postsSlider__img
+	img
+		width: 100%
+.postsSlider__content 
+	padding: 25px
+	border: 1px solid #f8f8f8
+	border-top: none
+.postsSlider__title
+	font-size: 20px
+	font-family: "Raleway", sans-serif
+	font-weight: 500
+	color: #555555
+.postsSlider__text
+	font-size: 14px
+	line-height: 1.6
+.postsSlider__link
+	position: relative
+	display: inline-block
+	font-size: 14px
+	color: #c7b299
+	&::after
+		content: ""
+		position: absolute
+		top: 9px
+		right: -15px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 4px 0 4px 5px
+		border-color: transparent transparent transparent #c7b299
+.postsSlider__date 
+	position: absolute
+	top: 20px
+	left: 20px
+	width: 50px
+	border-radius: 5px
+	color: #fff
+	text-align: center
+	overflow: hidden
+	
+.postsSlider__day
+	font-size: 24px
+	background-color: #363636
+.postsSlider__month
+	padding: 4px
+	font-size: 12px
+	background-color: #252525
+
+
+
+.postsSlider__item.slick-center 
+	.postsSlider__img
+		img
+			filter: brightness(60%)
+	.postsSlider__content 
+		background-color: #362f2d
+		border: none
+	.postsSlider__title
+		color: #c7b299
+	.postsSlider__text
+		color: #fff
+	.postsSlider__day
+		background-color: #c7b299
+	.postsSlider__month
+		background-color: #a48d72
+
+
+// -------------------Posts End----------------------------------
 
 @import "media"
      
