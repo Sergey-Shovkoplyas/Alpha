@@ -421,8 +421,6 @@ a
 	font-size: 12px
 	background-color: #252525
 
-
-
 .postsSlider__item.slick-center 
 	.postsSlider__img
 		img
@@ -438,6 +436,57 @@ a
 		background-color: #c7b299
 	.postsSlider__month
 		background-color: #a48d72
+
+.postsSlider
+	position: relative
+	.slick-prev,
+	.slick-next
+		position: absolute
+		bottom: -60px
+		left: 50%
+		transform: translateX(-11px)
+		width: 22px
+		height: 22px
+		border: none
+		background-color: #fff
+		font-size: 0
+		outline: none
+	.slick-prev
+		transform: translateX(-25px)
+		background-image: url("../img/slider-prev.svg")
+		&:hover
+			background-image: url("../img/slider-prev-hover.svg")
+	.slick-next
+		transform: translateX(5px)
+		background-image: url("../img/slider-next.svg")
+		&:hover
+			background-image: url("../img/slider-next-hover.svg")
+	.slick-dots
+		position: absolute
+		top: 190px
+		left: 115px
+		list-style: none
+		font-size: 0px
+		li 
+			display: inline-block
+			margin-right: 10px
+			button
+				width: 11px
+				height: 11px
+				padding: 0px
+				border: none
+				outline: none
+				border-radius: 5.5px
+				background-color: #758898
+		li.slick-active
+			button
+				width: 15px
+				height: 15px
+				border: 2px solid #ffffff
+				border-radius: 12.5px
+				background-color: transparent
+
+
 
 
 
