@@ -351,7 +351,7 @@ a
 // -------------------Posts Start----------------------------------
 
 .posts
-	padding: 50px 0 60px 0
+	padding: 50px 0 110px 0
 	color: #8c8c8c
 
 .posts__title
@@ -486,15 +486,82 @@ a
 				border-radius: 12.5px
 				background-color: transparent
 
-
-
-	 
-
-
-
-	
-	
 // -------------------Posts End----------------------------------
+
+// -------------------Footer Start----------------------------------
+
+.footerTop 
+	padding: 80px 0px
+	font-size: 14px
+	color: #555555
+	background-color: #191919
+.footerTop__logo
+	margin-bottom: 20px
+.footerTop__more
+	position: relative
+	display: block
+	margin-top: 25px
+	color: #fff
+	&:hover
+		color: #fff
+	&::after
+		content: ""
+		position: absolute
+		top: 9px
+		left: 85px
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 4px 0 4px 5px
+		border-color: transparent transparent transparent #fff
+.footerTop__head
+	margin-bottom: 20px
+	font-family: "Raleway", sans-serif
+	font-size: 24px
+	font-weight: 800
+	color: #fff
+.footerTop__post
+	&:hover
+		.footerTop__postDate
+			color: #fff
+		.footerTop__postText
+			color: #c7b299
+.footerTop__postDate
+	display: block
+	font-size: 12px
+	color: #363636
+.footerTop__line
+	margin: 15px 0
+	height: 1px
+	background-color: #555555
+.footerTop__link
+	color: #00bff3
+.footerTop__widget
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+.footerTop__widgetImg
+	margin-bottom: 20px
+
+.footerBottom
+	padding: 40px 0 45px 0
+	font-size: 13px
+	color: #555555
+	background-color: #111111
+.footerBottom__first
+	float: left
+.footerBottom__second
+	float: right
+.footerBottom__link
+	color: #c7b299 
+	&:hover
+		color: #c7b299 
+.footerBottom__mark
+	color: #959595
+
+
+
+// -------------------Footer End----------------------------------
 
 @import "media"
      
