@@ -7,9 +7,36 @@
 
 /* <1200px (960px) */
 +media-breakpoint-down(lg)
+  .mobile__content
+    width: 565px
+
+  .postsSlider .slick-dots
+    top: 145px
+    left: 80px
+
+  .footerTop__widget
+    justify-content: space-around
   
 /* <992px (720px) */
 +media-breakpoint-down(md)
+  .projectType
+    margin-bottom: 20px
+
+  .projects__contentWrap,
+  .posts__text
+    width: auto
+
+  .mobile__content-wrap
+    background: none
+  .mobile__content
+    width: auto
+    float: auto
+
+  
+  .postsSlider .slick-dots
+    top: 165px
+    left: 100px
+
 
 /* <768px (540px) */
 +media-breakpoint-down(sm)
@@ -41,6 +68,40 @@
   
   .enterForm__accept-label
     margin-bottom: 40px
+
+  .projects__contentWrap
+    margin-top: 80px
+
+  .sort__btn
+    margin-bottom: 10px
+
+  .projectItem
+    margin: 0px -15px 30px -15px 
+
+  .mobile__content-wrap
+    padding: 80px 0px
+  .mobile__list
+    margin-left: 0
+  .mobile__item
+    padding-left: 40px
+
+  .posts 
+    padding-bottom: 65px
+  .postsSlider
+    .slick-prev,
+    .slick-next
+      bottom: -10px
+  
+  .footerTop
+    padding: 40px 0
+  .footerTop__head
+    margin: 30px 0 0 0
+
+  .footerBottom__first,
+  .footerBottom__second 
+    float: none
+    text-align: center
+
   
 
 /* <576px (auto) */

@@ -13,6 +13,14 @@ $( document ).ready(function() {
 					slidesToShow: 2,
 					centerMode: false,
 				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					centerMode: false,
+					dots: false
+				}
 			}
 		]
 	});
