@@ -8,6 +8,7 @@
 	clear: both
 
 body 
+	min-width: 320px
 	font-family: "Montserrat", sans-serif
 	font-size: 16px
 	font-weight: 300
@@ -53,6 +54,32 @@ a
 	color: #fff
 	&:hover 
 		color: #c7b299
+.nav__switch
+	display: none
+	position: relative
+	width: 35px
+	height: 25px
+	span
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		display: block
+		height: 1px
+		width: 100%
+		background-color: #fff
+		&::before,
+		&::after 
+			content: ""
+			position: absolute
+			top: 10px
+			height: 1px
+			width: 100%
+			background-color: #fff
+		&::before
+			top: -10px
+		&::after 
+			top: 10px
+
 
 .user-pannel
 	margin-top: 25px
