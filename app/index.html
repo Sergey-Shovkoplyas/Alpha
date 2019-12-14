@@ -43,7 +43,7 @@
 				<div class="col-4 col-md-7 col-lg-8 order-1 order-md-2">
 
 					<nav class="nav">
-						<div class="nav__switch">
+						<div class="nav__switch active">
 							<span></span>
 						</div>
 						<ul class="nav__list">
@@ -174,18 +174,18 @@
 				<p class="projects__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
 					Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 				<div class="sort">
-					<button class="sort__btn sort__btn--active">All</button>
-					<button class="sort__btn">Web Design</button>
-					<button class="sort__btn">Mobile App</button>
-					<button class="sort__btn">Illustration</button>
-					<button class="sort__btn">Photography</button>
+					<button data-filter=".all" class="sort__btn sort__btn--active">All</button>
+					<button data-filter=".design" class="sort__btn">Web Design</button>
+					<button data-filter=".app" class="sort__btn">Mobile App</button>
+					<button data-filter=".illustration" class="sort__btn">Illustration</button>
+					<button data-filter=".photo" class="sort__btn">Photography</button>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix design projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-1.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -203,7 +203,7 @@
 				</div>
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix design projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-2.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -220,7 +220,7 @@
 				</div>
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix app projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-3.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -237,7 +237,7 @@
 				</div>
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix app projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-4.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -254,7 +254,7 @@
 				</div>
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix app projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-5.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -271,7 +271,7 @@
 				</div>
 				<div class="col-md-6 col-lg-4">
 
-					<div class="projectItem">
+					<div class="mix app projectItem">
 						<div class="projectItem__img">
 							<img src="img/project-6.jpg" alt="Project">
 							<div class="projectItem__hover">
@@ -459,6 +459,7 @@
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/mixitup.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

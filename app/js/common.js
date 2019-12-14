@@ -25,4 +25,9 @@ $( document ).ready(function() {
 		]
 	});
 
+	$('.nav__switch').on('click', function(e) {
+		$(this).toggleClass('active');
+	});
+
+
 });
