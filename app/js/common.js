@@ -26,7 +26,18 @@ $( document ).ready(function() {
 	});
 
 	$('.nav__switch').on('click', function(e) {
-		$(this).toggleClass('active');
+		$('.nav__switch, .nav__list').toggleClass('active');
+		$('body').toggleClass('lock');
+	});
+	
+	$(document).on('scroll', function(e) {
+		let top = $('html').scrollTop();
+		if(top > 0) {
+			$('.header__top').addClass('active');
+		} else {
+			$('.header__top').removeClass('active');
+		}
+		
 	});
 
 

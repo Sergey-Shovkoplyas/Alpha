@@ -54,42 +54,6 @@ a
 	color: #fff
 	&:hover 
 		color: #c7b299
-.nav__switch
-	display: none
-	position: relative
-	width: 35px
-	height: 25px
-	&::before,
-	&::after 
-		content: ""
-		position: absolute
-		height: 1px
-		width: 100%
-		background-color: #fff
-		transition: all .5s
-	&::before
-		top: 0px
-	&::after 
-		bottom: 0px
-	span
-		position: absolute
-		top: 50%
-		transform: translateY(-50%)
-		display: block
-		height: 1px
-		width: 100%
-		background-color: #fff
-		transition: all .5s
-.nav__switch.active::before
-	top: 50%
-	transform: rotate(45deg)
-.nav__switch.active::after 
-	bottom: 50%
-	transform: rotate(-45deg)
-.nav__switch.active span
-	transform: scale(0)
-		
-
 
 .user-pannel
 	margin-top: 25px

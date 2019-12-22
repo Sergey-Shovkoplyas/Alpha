@@ -30,45 +30,48 @@
 
 <body>
 	<header id="header" class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-md-3 col-lg-2  order-2 order-md-1">
+		<div class="header__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 col-md-3 col-lg-2  order-2 order-md-1">
 
-					<a class="logo" href="#">
-						<img class="logo__img" src="img/logo.svg" alt="Alpha" width="64" height="55">
-						<span class="logo__text">Alpha</span>
-					</a>
+						<a class="logo" href="#">
+							<img class="logo__img" src="img/logo.svg" alt="Alpha" width="64" height="55">
+							<span class="logo__text">Alpha</span>
+						</a>
 
-				</div>
-				<div class="col-4 col-md-7 col-lg-8 order-1 order-md-2">
+					</div>
+					<div class="col-4 col-md-7 col-lg-8 order-1 order-md-2">
 
-					<nav class="nav">
-						<div class="nav__switch active">
-							<span></span>
+						<nav class="nav">
+							<div class="nav__switch">
+								<span></span>
+							</div>
+							<ul class="nav__list">
+								<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Shortcodes</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+							</ul>
+						</nav>
+
+					</div>
+					<div class="col-4 col-md-2 order-3  order-md-3">
+
+						<div class="user-pannel">
+							<a href="#" class="cart"></a>
+							<a href="#" class="search"></a>
 						</div>
-						<ul class="nav__list">
-							<li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Features</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Shortcodes</a></li>
-							<li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-						</ul>
-					</nav>
 
-				</div>
-				<div class="col-4 col-md-2 order-3  order-md-3">
-
-					<div class="user-pannel">
-						<a href="#" class="cart"></a>
-						<a href="#" class="search"></a>
-					</div> 
-
+					</div>
 				</div>
 			</div>
-
+		</div>
+		<div class="container">
 			<form class="enterForm" action="#">
 				<label class="enterForm__text-label enterForm__name"><input class="enterForm__text" type="text" name="name"
 						placeholder="Name"></label>
@@ -101,7 +104,7 @@
 						<div class="projectType__icon-wrap">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.594"
 								height="47.59" viewBox="0 0 47.594 47.59">
-								<path   class="projectType__icon"
+								<path class="projectType__icon"
 									d="M534.668,1121.47a1.592,1.592,0,0,0-2.249,0l-13.846,13.84-19.467,8.58-3-3,8.576-19.47,13.844-13.84a1.59,1.59,0,1,0-2.248-2.25l-14.268,14.26-14.477,32.87,32.868-14.48,14.266-14.26A1.592,1.592,0,0,0,534.668,1121.47Zm-20.173,11a1.606,1.606,0,0,0,2.25,0l13.332-13.34a1.591,1.591,0,0,0-2.25-2.25L514.5,1130.22A1.593,1.593,0,0,0,514.5,1132.47Zm-3.48-3.48a1.606,1.606,0,0,0,2.25,0l13.333-13.34a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.6,1.6,0,0,0,511.015,1128.99Zm-3.481-3.49a1.581,1.581,0,0,0,2.25,0l13.333-13.33a1.591,1.591,0,0,0-2.25-2.25l-13.333,13.33A1.593,1.593,0,0,0,507.534,1125.5Z"
 									transform="translate(-487.531 -1104.88)" />
 							</svg>
@@ -119,7 +122,7 @@
 						<div class="projectType__icon-wrap">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.875"
 								height="39.19" viewBox="0 0 42.875 39.19">
-								<path   class="projectType__icon"
+								<path class="projectType__icon"
 									d="M811.85,1113.11l-21.436,11.56,21.436,11.56,21.437-11.56Zm0,26.85-17.451-9.41-3.985,2.15,21.436,11.55,21.437-11.55-3.985-2.15Zm0,8.02-17.451-9.41-3.985,2.15,21.436,11.56,21.437-11.56-3.985-2.15Z"
 									transform="translate(-790.406 -1113.09)" />
 							</svg>
@@ -137,7 +140,7 @@
 						<div class="projectType__icon-wrap">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43.56"
 								height="43.57" viewBox="0 0 43.56 43.57">
-								<path   class="projectType__icon"
+								<path class="projectType__icon"
 									d="M1132.93,1129.85a4.327,4.327,0,0,0-2.61-3.86,4.623,4.623,0,0,1-2.88-6.97,4.161,4.161,0,0,0-5.46-5.46,6.019,6.019,0,0,1-4.23.35,5.937,5.937,0,0,1-2.74-3.24,4.173,4.173,0,0,0-7.73,0,4.634,4.634,0,0,1-6.97,2.89,4.161,4.161,0,0,0-5.46,5.46,4.636,4.636,0,0,1-2.88,6.97,4.159,4.159,0,0,0,0,7.72,4.623,4.623,0,0,1,2.88,6.97,4.165,4.165,0,0,0,5.46,5.46,4.634,4.634,0,0,1,6.97,2.89,4.173,4.173,0,0,0,7.73,0,4.628,4.628,0,0,1,6.97-2.89,4.165,4.165,0,0,0,5.46-5.46,4.623,4.623,0,0,1,2.88-6.97A4.327,4.327,0,0,0,1132.93,1129.85Zm-21.79,7.99a7.99,7.99,0,1,1,7.99-7.98A7.979,7.979,0,0,1,1111.14,1137.84Z"
 									transform="translate(-1089.38 -1108.06)" />
 							</svg>
@@ -155,7 +158,7 @@
 						<div class="projectType__icon-wrap">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50.88"
 								height="35.63" viewBox="0 0 50.88 35.63">
-								<path   class="projectType__icon"
+								<path class="projectType__icon"
 									d="M1397,1129.24a6.8,6.8,0,0,1,5.74-3.6h26.21v-1.66a2.482,2.482,0,0,0-2.46-2.48h-10.82v-1.44a3.707,3.707,0,0,0-3.68-3.73h-6.29a3.722,3.722,0,0,0-3.69,3.73v1.44H1391.2a2.475,2.475,0,0,0-2.46,2.48v22.17Zm7.47-9.18a1.266,1.266,0,0,1,.36-0.88,1.185,1.185,0,0,1,.87-0.36h6.29a1.231,1.231,0,0,1,1.23,1.24v1.44h-8.75v-1.44Zm25.45,29.7a4.319,4.319,0,0,1-3.54,2.22h-35.3a1.417,1.417,0,0,1-1.37-2.22l9.49-19.42a4.343,4.343,0,0,1,3.54-2.23h35.3a1.424,1.424,0,0,1,1.37,2.23Z"
 									transform="translate(-1388.75 -1116.34)" />
 							</svg>
@@ -297,7 +300,10 @@
 			<div class="mobile__content-wrap clearfix">
 				<div class="mobile__content">
 					<h2 class="mobile__title">Excellent for Mobile Devices.</h2>
-					<p class="mobile__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+					<p class="mobile__text">Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+						nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii
+						legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+					</p>
 					<ul class="mobile__list">
 						<li class="mobile__item">Nam liber tempor cum soluta nobis eleifend option;</li>
 						<li class="mobile__item">Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
@@ -311,63 +317,68 @@
 	<section id="posts" class="posts">
 		<div class="container">
 			<h2 class="posts__title">Recent Posts.</h2>
-			<p class="posts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+			<p class="posts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas
+				est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
 			<div class="postsSlider">
 				<div class="postsSlider__item">
-						<div class="postsSlider__img">
-							<img src="img/post-1.jpg" alt="Post">
-						</div>
-						<div class="postsSlider__content">
-							<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
-							<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
-							<a href="#" class="postsSlider__link">Read More</a>
-						</div>
-						<div class="postsSlider__date">
-							<div class="postsSlider__day">30</div>
-							<div class="postsSlider__month">Sep.</div>
-						</div>
+					<div class="postsSlider__img">
+						<img src="img/post-1.jpg" alt="Post">
+					</div>
+					<div class="postsSlider__content">
+						<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
+						<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+						</p>
+						<a href="#" class="postsSlider__link">Read More</a>
+					</div>
+					<div class="postsSlider__date">
+						<div class="postsSlider__day">30</div>
+						<div class="postsSlider__month">Sep.</div>
+					</div>
 				</div>
 				<div class="postsSlider__item">
-						<div class="postsSlider__img">
-							<img src="img/post-2.jpg" alt="Post">
-						</div>
-						<div class="postsSlider__content">
-							<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
-							<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
-							<a href="#" class="postsSlider__link">Read More</a>
-						</div>
-						<div class="postsSlider__date">
-							<div class="postsSlider__day">30</div>
-							<div class="postsSlider__month">Sep.</div>
-						</div>
+					<div class="postsSlider__img">
+						<img src="img/post-2.jpg" alt="Post">
+					</div>
+					<div class="postsSlider__content">
+						<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
+						<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+						</p>
+						<a href="#" class="postsSlider__link">Read More</a>
+					</div>
+					<div class="postsSlider__date">
+						<div class="postsSlider__day">30</div>
+						<div class="postsSlider__month">Sep.</div>
+					</div>
 				</div>
 				<div class="postsSlider__item">
-						<div class="postsSlider__img">
-							<img src="img/post-3.jpg" alt="Post">
-						</div>
-						<div class="postsSlider__content">
-							<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
-							<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
-							<a href="#" class="postsSlider__link">Read More</a>
-						</div>
-						<div class="postsSlider__date">
-							<div class="postsSlider__day">30</div>
-							<div class="postsSlider__month">Sep.</div>
-						</div>
+					<div class="postsSlider__img">
+						<img src="img/post-3.jpg" alt="Post">
+					</div>
+					<div class="postsSlider__content">
+						<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
+						<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+						</p>
+						<a href="#" class="postsSlider__link">Read More</a>
+					</div>
+					<div class="postsSlider__date">
+						<div class="postsSlider__day">30</div>
+						<div class="postsSlider__month">Sep.</div>
+					</div>
 				</div>
 				<div class="postsSlider__item">
-						<div class="postsSlider__img">
-							<img src="img/post-2.jpg" alt="Post"> 
-						</div>
-						<div class="postsSlider__content">
-							<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
-							<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium</p>
-							<a href="#" class="postsSlider__link">Read More</a>
-						</div>
-						<div class="postsSlider__date">
-							<div class="postsSlider__day">30</div>
-							<div class="postsSlider__month">Sep.</div>
-						</div>
+					<div class="postsSlider__img">
+						<img src="img/post-2.jpg" alt="Post">
+					</div>
+					<div class="postsSlider__content">
+						<h3 class="postsSlider__title">Lorem ipsum dolor sit amet</h3>
+						<p class="postsSlider__text">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+						</p>
+						<a href="#" class="postsSlider__link">Read More</a>
+					</div>
+					<div class="postsSlider__date">
+						<div class="postsSlider__day">30</div>
+						<div class="postsSlider__month">Sep.</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -383,7 +394,9 @@
 							<span class="logo__text">Alpha</span>
 						</a>
 						<div class="footerTop__text">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+							Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+							laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit
+							lobortis claritatem.
 						</div>
 						<a href="#" class="footerTop__more">Read more</a>
 
@@ -403,7 +416,8 @@
 						<div class="footerTop__line"></div>
 						<div class="footerTop__post">
 							<span class="footerTop__postDate">September 08, 2015</span>
-							<span class="footerTop__postText">Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</span>
+							<span class="footerTop__postText">Claritas est etiam processus dynamicus, qui sequitur mutationem per
+								seacula quarta decima</span>
 						</div>
 
 					</div>
@@ -411,12 +425,14 @@
 
 						<h3 class="footerTop__head">Our Twitter</h3>
 						<div class="footerTop__post">
-							<span class="footerTop__postText"><a href="#" class="footerTop__link">@waxom</a> Cum soluta nobis eleifend option congue nihil imperdiet doming</span>
+							<span class="footerTop__postText"><a href="#" class="footerTop__link">@waxom</a> Cum soluta nobis eleifend
+								option congue nihil imperdiet doming</span>
 							<span class="footerTop__postDate">3 mins ago</span>
 						</div>
 						<div class="footerTop__line"></div>
 						<div class="footerTop__post">
-							<span class="footerTop__postText">Mirum est <a href="#" class="footerTop__link">#envato</a> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
+							<span class="footerTop__postText">Mirum est <a href="#" class="footerTop__link">#envato</a> notare quam
+								littera gothica, quam nunc putamus parum anteposuerit litterarum</span>
 							<span class="footerTop__postDate">5 hours ago</span>
 						</div>
 						<div class="footerTop__line"></div>
@@ -424,7 +440,7 @@
 							<span class="footerTop__postText">Soluta nobis option bit.ly/1Hniso7</span>
 							<span class="footerTop__postDate">20 days ago</span>
 						</div>
-				
+
 
 					</div>
 					<div class="col-md-3">
@@ -436,7 +452,7 @@
 							<img class="footerTop__widgetImg" src="img/widget-3.jpg" alt="widget">
 							<img class="footerTop__widgetImg" src="img/widget-4.jpg" alt="widget">
 						</div>
-						
+
 
 					</div>
 				</div>
@@ -445,17 +461,19 @@
 		<div class="footerBottom">
 			<div class="container">
 				<div class="footerBottom__first">
-					Copyright © 2017 <span class="footerBottom__mark">Alpha</span>    |   Privacy Policy   |   <a href="#" class="footerBottom__link">FAQ</a>   |   Support
+					Copyright © 2017 <span class="footerBottom__mark">Alpha</span> | Privacy Policy | <a href="#"
+						class="footerBottom__link">FAQ</a> | Support
 				</div>
 				<div class="footerBottom__second">
-					Designed by <span class="footerBottom__mark">ThemeFire</span>   |   Only on <span class="footerBottom__mark">Envato Market</span>
+					Designed by <span class="footerBottom__mark">ThemeFire</span> | Only on <span
+						class="footerBottom__mark">Envato Market</span>
 				</div>
 			</div>
 		</div>
 	</footer>
 
 
-   
+
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
